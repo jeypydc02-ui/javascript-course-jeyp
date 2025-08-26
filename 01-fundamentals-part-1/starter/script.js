@@ -70,106 +70,106 @@
 
 
 
-// // PART 2
-// //Basic Operators - Math Operators
- 
-// newFunction();
- 
- 
- 
-// function newFunction() {
-     console.log("=== MATH OPERATORS ===");
- 
-     const now = 2023;
-     const ageJeyp = now - 2004;
-     const ageJohn = now - 2001;
-     console.log(ageJeyp, ageJohn);
- 
-     console.log(ageJeyp * 2, ageJohn / 10, 2 ** 3); // Exponentiation operator
-     console.log("Math Operations");
-     console.log("Addition:", ageJeyp + ageJohn);
-     console.log("Subtraction:", ageJeyp - ageJohn);
-     console.log("Multiplication:", ageJeyp * ageJohn);
-     console.log("Division:", ageJeyp / ageJohn);
-     console.log("Exponentiation:", 2 ** 3);
- 
-     // Math with Strings
-     const firstName = "Jeyp";
-     const lastName = "Dela Cruz";
-     console.log(firstName + " " + lastName);
- 
-     console.log("Hello " + "World" + "!");
- 
- 
-     //Assignment Operators
-     console.log("=== ASSIGNMENT OPERATORS ===");
- 
-     let x = 10 + 5;
-     console.log("x starts as:", x);
- 
-     x += 10;
-     console.log("x starts as:", x);
- 
-     x *= 4;
-     console.log("x starts as:", x);
- 
-     x /= 2;
-     console.log("x starts as:", x);
- 
-     x++;
-     console.log("x starts as:", x);
- 
-     x--;
-     console.log("x starts as:", x);
- 
-     x++;
-     console.log("x starts as:", x);
- 
-     // Comparison Operators
-     console.log("=== COMPARISON OPERATORS ===");
-     console.log("Age comparison");
- 
-     console.log(ageJohn > ageJeyp); // Greater than
-     console.log(ageJeyp >= 18); // Less than
-     console.log(ageJohn < 30); // Greater than or equal to
-     console.log(ageJeyp <= ageJohn); // Less than or equal to
- 
- 
-     console.log("Number comparisons:");
-     console.log(25 > 20); // true
-     console.log(15 < 10); // false
-     console.log(18 >= 18); // true
-     console.log(16 <= 15); // false
- 
-     const isFullAge = ageJeyp >= 18;
-    console.log("Is Jeyp adult age?", isFullAge);
- 
-     console.log("Complex comparisons:");
-     console.log(now - 2004 > now - 2001); // true
- 
-    let z, y;
-    z = y = 25 - 10 - 5; // Assigning the result of the expression to both z and y
-     console.log(z, y);
- 
-     const averageAge = (ageJeyp + ageJohn) / 2;
-     console.log(ageJeyp, ageJohn, averageAge);
- 
-     //Coding
-     //Test Data 1
-     const massJeyp = 52;
-     const heightJeyp = 1.60;
-     const massJohn = 60;
-     const heightJohn = 1.75;
- 
-     const bmiJeyp = massJeyp / (heightJeyp ** 2);
-     const bmiJohn = massJohn / (heightJohn ** 2);
- 
-     const jeypHigherBMI = bmiJeyp > bmiJohn;
- 
-     console.log(bmiJeyp);
-     console.log(bmiJohn);
- 
-     console.log(jeypHigherBMI);
+    // // // PART 2
+    // // //Basic Operators - Math Operators
+    
+    // // newFunction();
+    
+    
+    
+    // // function newFunction() {
+    //      console.log("=== MATH OPERATORS ===");
+    
+    //      const now = 2023;
+    //      const ageJeyp = now - 2004;
+    //      const ageJohn = now - 2001;
+    //      console.log(ageJeyp, ageJohn);
+    
+    //      console.log(ageJeyp * 2, ageJohn / 10, 2 ** 3); // Exponentiation operator
+    //      console.log("Math Operations");
+    //      console.log("Addition:", ageJeyp + ageJohn);
+    //      console.log("Subtraction:", ageJeyp - ageJohn);
+    //      console.log("Multiplication:", ageJeyp * ageJohn);
+    //      console.log("Division:", ageJeyp / ageJohn);
+    //      console.log("Exponentiation:", 2 ** 3);
+    
+    //      // Math with Strings
+    //      const firstName = "Jeyp";
+    //      const lastName = "Dela Cruz";
+    //      console.log(firstName + " " + lastName);
+    
+    //      console.log("Hello " + "World" + "!");
+    
+    
+    //      //Assignment Operators
+    //      console.log("=== ASSIGNMENT OPERATORS ===");
+    
+    //      let x = 10 + 5;
+    //      console.log("x starts as:", x);
+    
+    //      x += 10;
+    //      console.log("x starts as:", x);
+    
+    //      x *= 4;
+    //      console.log("x starts as:", x);
+    
+    //      x /= 2;
+    //      console.log("x starts as:", x);
+    
+    //      x++;
+    //      console.log("x starts as:", x);
+    
+    //      x--;
+    //      console.log("x starts as:", x);
+    
+    //      x++;
+    //      console.log("x starts as:", x);
+    
+    //      // Comparison Operators
+    //      console.log("=== COMPARISON OPERATORS ===");
+    //      console.log("Age comparison");
+    
+    //      console.log(ageJohn > ageJeyp); // Greater than
+    //      console.log(ageJeyp >= 18); // Less than
+    //      console.log(ageJohn < 30); // Greater than or equal to
+    //      console.log(ageJeyp <= ageJohn); // Less than or equal to
+    
+    
+    //      console.log("Number comparisons:");
+    //      console.log(25 > 20); // true
+    //      console.log(15 < 10); // false
+    //      console.log(18 >= 18); // true
+    //      console.log(16 <= 15); // false
+    
+    //      const isFullAge = ageJeyp >= 18;
+    //     console.log("Is Jeyp adult age?", isFullAge);
+    
+    //      console.log("Complex comparisons:");
+    //      console.log(now - 2004 > now - 2001); // true
+    
+    //     let z, y;
+    //     z = y = 25 - 10 - 5; // Assigning the result of the expression to both z and y
+    //      console.log(z, y);
+    
+    //      const averageAge = (ageJeyp + ageJohn) / 2;
+    //      console.log(ageJeyp, ageJohn, averageAge);
+    
+    //      //Coding
+    //      //Test Data 1
+    //      const massJeyp = 52;
+    //      const heightJeyp = 1.60;
+    //      const massJohn = 60;
+    //      const heightJohn = 1.75;
+    
+    //      const bmiJeyp = massJeyp / (heightJeyp ** 2);
+    //      const bmiJohn = massJohn / (heightJohn ** 2);
+    
+    //      const jeypHigherBMI = bmiJeyp > bmiJohn;
+    
+    //      console.log(bmiJeyp);
+    //      console.log(bmiJohn);
+    
+    //      console.log(jeypHigherBMI);
  
 
  
@@ -286,3 +286,96 @@
  
 // console.log(`Jpdc's BMI: ${bmiJpdc.toFixed(2)}`);
 // console.log(`John's BMI: ${bmiJohn.toFixed(2)}`);
+
+
+
+// Type Conversion and Coercion
+// type conversion (manual)
+
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jeyp"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+console.log(typeof String(23));
+
+console.log("I am " + 23 + " years old.");
+console.log("23" - "10" - 3);
+console.log("23" / "2");
+console.log("23" * "2");
+
+let n = "1" + 1; 
+n = n - 1;
+console.log(n);
+
+const age = '18';
+if (age === 18) console.log("You just became an adult :D (strict)");
+if (age == 18) console.log("You just became an adult :D (loose)");
+
+console.log('18' === 18);
+console.log('18' == 18);
+console.log( 18 === 18);
+
+// why == can be dangerous
+
+console.log('0' == 0);
+console.log(0 == false);
+console.log('0' == false);
+console.log(null == undefined);
+
+console.log(''  == 0);
+console.log('    '  == 0);
+
+// best practice
+const favorite = Number(prompt("What's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) { // '23' == 23
+    console.log("Cool! 23 is an amazing number!");
+} else if (favorite === 7) {
+    console.log("7 is also a cool number");
+} else if (favorite === 9) {
+    console.log("9 is also a cool number");
+} else {
+    console.log("Number is not 23 or 7 or 9");
+}
+
+if (favorite !== 23) console.log("Why not 23?");
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true;    // B
+
+console.log(`AND OPERATOR: ${hasDriversLicense && hasGoodVision}`);
+console.log(`OR OPERATOR: ${hasDriversLicense || hasGoodVision}`);
+console.log(`NOT OPERATOR: ${!hasDriversLicense}`);
+
+const isTired = true; // C
+console.log(hasDriversLicense && hasGoodVision && !isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Jp is able to drive!");
+}else {
+    console.log("Someone else should drive...");
+
+}   
+
+
+const bill = 430;
+
+
+const tip = bill <=300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+
+
+
+
+
+
+
+
