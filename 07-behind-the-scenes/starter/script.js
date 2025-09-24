@@ -77,25 +77,83 @@
 // timer.startModern();
 
 
-const functionTypes = {
-    regularFunction: function() {
-        console.log('Arguments length:', arguments.length);
-        console.log('First argument:', argument[0]);    
-},
-    arrowFunction: () => {
-        console.log(arguments);
-        console.log('Arrow function called');
-    },
+// const functionTypes = {
+//     regularFunction: function() {
+//         console.log('Arguments length:', arguments.length);
+//         console.log('First argument:', argument[0]);    
+// },
+//     arrowFunction: () => {
+//         console.log(arguments);
+//         console.log('Arrow function called');
+//     },
 
-    modernFunction: (...args) => {
-        console.log('Args length', args.length);
-        console.log('First arg:', args[0]);
-    }
+//     modernFunction: (...args) => {
+//         console.log('Args length', args.length);
+//         console.log('First arg:', args[0]);
+//     }
+// };
+
+// functionTypes.regularFunction('Hello', 'world');
+//  functionTypes.arrowFunction('test');
+// functionTypes.modernFunction('modern', 'approach');
+
+// let age = 30;
+
+// let oldage = age;
+// age = 31;
+// console.log('age', age);
+// console.log('oldage', oldage);
+
+// const me = {
+//     name: 'Sasuke',
+//     age: 21,
+// };
+
+// const friend = me;
+
+// friend.name = 'Naruto';
+// friend.age = 22;
+
+// console.log('Me:', me);
+// console.log('Friend:', friend);
+
+// const original = {
+//     name: 'Tanjiro',
+//     age: 20,
+//     hobbies: ['demon slayer', 'pumaslang'],
+// };
+
+// const shallowCopy = { ...original };
+// shallowCopy.name = 'Nezuko';
+
+// console.log('Original name:', original.name);
+// console.log('Shallow copy name:', shallowCopy.name);    
+
+// shallowCopy.hobbies.push('anime');
+
+// console.log(original.hobbies);
+// console.log(shallowCopy.hobbies);
+
+
+
+const deepOriginal = {
+    name: 'Yuki',
+    age: 24,
+
+    address: { city: 'Kyoto', country: 'Japan'},
+
+    hobbies: ['driving', 'traveling'],
 };
+const deepCopy = structuredClone(deepOriginal);
+deepCopy.address.city = 'Tokyo';
+deepCopy.hobbies.push('photography');
+deepCopy.name = 'Hana';
 
-functionTypes.regularFunction('Hello', 'world');
- functionTypes.arrowFunction('test');
-functionTypes.modernFunction('modern', 'approach');
+console.log(deepOriginal);
+console.log(deepCopy);
+
+
+
 
 
 
