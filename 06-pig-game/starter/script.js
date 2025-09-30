@@ -25,6 +25,8 @@ const diceE1 = document.querySelector('.dice');
 
 const btnRollE1 = document.querySelector('.btn--roll');
 
+const btnHoldE1 = document.querySelector('.btn--hold');
+
 // game initialization function
 
 const init = function () {
@@ -62,11 +64,35 @@ btnRollE1.addEventListener('click', function () {
             document.getElementById(`current--${activePlayer}`).textContent = currentScore;
         } else {
 
-                currentScore = 0;
-            //Switch to next player
-            document.getElementById(`current--${activePlayer}`).textContent = 0;
-        
-           
-        }
+            switchPlayer();
+            console.log('Active player: ', activePlayer);
+
+             console.log('Player 0 active: ', player0E1.classList.contains('player--active'));
+    console.log('Player 1 active: ', player1E1.classList.contains('player--active'));
+            
+        };
     }
 });
+
+const switchPlayer = function () {
+    document.getElementById(`current--${activePlayer}`).textContent = 0;
+        currentScore = 0;
+    //Switch to next player
+    activePlayer = activePlayer === 0 ? 1 : 0;
+
+    player0E1.classList.toggle('player--active');
+    player1E1.classList.toggle('player--active');
+};
+
+
+btnHoldE1.addEventListener('click', function () {
+    if (playing && currentScore > 0 ) {
+        //1. Add current score to active player's score
+        scores[activePlayer] += currentScore;
+        console.log('Scores: ', scores);
+        document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
+        switchPlayer();
+
+    }
+
+    });
